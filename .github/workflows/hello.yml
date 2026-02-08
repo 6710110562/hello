@@ -1,0 +1,15 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Hello World 
+
+# 1. จะให้ทำตอนไหน? (ในที่นี้คือตอนที่มีคน Push โค้ดขึ้นไป)
+on: [push]
+
+# 2. จะให้ทำอะไร?
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest  # ใช้เครื่อง Linux ของ GitHub รันให้ฟรี
+    steps:
+      - name: Print Hello Message
+        run: echo "Hello World! ยินดีด้วย Workflow แรกของคุณทำงานแล้ว!"
+
